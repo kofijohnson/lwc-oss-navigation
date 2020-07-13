@@ -1,0 +1,33 @@
+<template>
+    <!-- Check if data is available -->
+    <template if:true={isStudentsAvailable}>
+        <div>
+            <h2>Students Data:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- iterating through for each -->
+                    <template for:each={students} for:item="student">
+                        <!-- unique key is required for for:each -->
+                        <tr
+                            key={student.id}
+                            data-key={student.id}
+                            onclick={goToStudent}
+                        >
+                            <!-- rendering data -->
+                            <td>{student.id}</td>
+                            <td>{student.name}</td>
+                            <td>{student.age}</td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </template>
+</template>
