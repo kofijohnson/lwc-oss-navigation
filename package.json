@@ -5,7 +5,7 @@
     "author": "Kofi Johnson",
     "bugs": "https://github.com/Kofi Johnson/LWCPortal/issues",
     "dependencies": {
-        "compression": "^1.7.4",
+        "compression": "^1.8.1",
         "express": "^4.17.1",
         "helmet": "^3.23.3",
         "navigo": "^7.1.2"
